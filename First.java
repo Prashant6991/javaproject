@@ -8,15 +8,16 @@ public class First
 			if(!f.exists())
 			{
 				System.out.println("file does not exists");
-				System.exit(0);
+				
 			}
 		try(FileInputStream fis=new FileInputStream(f))
 		{
+
 		byte b[]=new byte[((int)f.length())];
 		fis.read(b);
 		String ss=new String(b);
 		System.out.println(ss);
-		}
+		}//asdsad
 		catch(Exception ee)
 		{
 			ee.printStackTrace();
